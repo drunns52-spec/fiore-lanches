@@ -1,0 +1,24 @@
+name: fiore_lanches
+description: Delivery Fiore Lanches - Etapa 4
+publish_to: none
+version: 1.3.0+4
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.3.1
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/images/app_icon.png
+  adaptive_icon_background: "#FFF8EF"
+  adaptive_icon_foreground: assets/images/app_icon.png
