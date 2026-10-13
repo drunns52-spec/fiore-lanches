@@ -14,13 +14,52 @@ class Product {
   const Product(this.title, this.detail, this.category, this.icon, this.price, this.image);
 }
 const catalog = <Product>[
-  Product('Fiori Especial', 'Pão artesanal, carne 180g, queijo, bacon e molho especial', 'Hambúrgueres', '🍔', 29.90, 'assets/images/burger.png'),
-  Product('X-Burguer Simples', 'Pão, carne, queijo e salada', 'Hambúrgueres', '🍔', 18.90, 'assets/images/burger2.png'),
-  Product('X-Bacon', 'Pão, carne, queijo, bacon e salada', 'Hambúrgueres', '🍔', 24.90, 'assets/images/burger.png'),
-  Product('Batata Frita Média', 'Crocante e sequinha', 'Acompanhamentos', '🍟', 12.00, 'assets/images/fries.png'),
-  Product('Refrigerante Lata', 'Diversos sabores', 'Bebidas', '🥤', 6.00, 'assets/images/soda.png'),
+  Product('Misto Quente', 'Presunto e queijo', 'Lanches', '🍔', 8.00, 'assets/images/burger.png'),
+  Product('Bauru', 'Queijo, presunto, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 11.00, 'assets/images/burger.png'),
+  Product('Hambúrguer', 'Hambúrguer, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 11.00, 'assets/images/burger.png'),
+  Product('X-Burguer', 'Hambúrguer, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 13.00, 'assets/images/burger.png'),
+  Product('Cachorro Quente', 'Salsicha, queijo, tomate, milho verde e batata palha', 'Lanches', '🍔', 13.00, 'assets/images/burger.png'),
+  Product('Americano', 'Ovo, queijo, presunto, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 15.00, 'assets/images/burger.png'),
+  Product('X-Salada', 'Hambúrguer, presunto, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 15.00, 'assets/images/burger.png'),
+  Product('X-Egg', 'Hambúrguer, ovo, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 15.00, 'assets/images/burger.png'),
+  Product('Mexicano', 'Presunto, ovo, queijo, salsicha, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 15.00, 'assets/images/burger.png'),
+  Product('Calabresinha', 'Pão de sal, calabresinha, queijo, tomate e cebola', 'Lanches', '🍔', 15.00, 'assets/images/burger.png'),
+  Product('Filezinho de Frango', 'Pão de sal, filé de frango, queijo, tomate e cebola', 'Lanches', '🍔', 15.00, 'assets/images/burger.png'),
+  Product('Filezinho Misto', 'Pão de sal, filé, filé de frango, queijo, tomate e cebola', 'Lanches', '🍔', 17.00, 'assets/images/burger.png'),
+  Product('Hambúrguer Especial', 'Pão de sal, filé, queijo, tomate e cebola', 'Lanches', '🍔', 18.00, 'assets/images/burger.png'),
+  Product('X-Bacon', 'Hambúrguer, bacon, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 17.00, 'assets/images/burger.png'),
+  Product('Hot Dog Burguer', 'Hambúrguer, salsicha, queijo, tomate, cebola, milho verde e batata palha', 'Lanches', '🍔', 16.00, 'assets/images/burger.png'),
+  Product('American Burguer', 'Hambúrguer, ovo, queijo, presunto, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 19.00, 'assets/images/burger.png'),
+  Product('American Bacon', 'Bacon, ovo, queijo, presunto, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 19.00, 'assets/images/burger.png'),
+  Product('Cachorro Quente c/Bacon', 'Salsicha, bacon, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 19.00, 'assets/images/burger.png'),
+  Product('Sanduísser c/Frango', 'Hambúrguer, filé de frango, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 17.00, 'assets/images/burger.png'),
+  Product('American Frango', 'Frango, presunto, ovo, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 17.00, 'assets/images/burger.png'),
+  Product('2 Eggs Bacon', 'Hambúrguer, ovo, bacon, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 19.00, 'assets/images/burger.png'),
+  Product('A. Calabresa', 'Presunto, queijo, salsicha, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 10.00, 'assets/images/burger.png'),
+  Product('X-Hiper', 'Hambúrguer, ovo, bacon, presunto, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 20.00, 'assets/images/burger.png'),
+  Product('X-Dog Hiper', 'Hambúrguer, bacon, ovo, salsicha, queijo, presunto, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 21.00, 'assets/images/burger.png'),
+  Product('X-Frango', 'Filé de frango, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 20.00, 'assets/images/burger.png'),
+  Product('X-Dog Galinha', 'Filé de frango, queijo, salsicha, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 21.00, 'assets/images/burger.png'),
+  Product('Galinha Mista', 'Filé de frango, filé, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 21.00, 'assets/images/burger.png'),
+  Product('Galinha Mista c/Bacon', 'Filé de frango, bacon, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 21.00, 'assets/images/burger.png'),
+  Product('Galinhão', 'Filé de frango, filé, bacon, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 22.00, 'assets/images/burger.png'),
+  Product('X-Filé', 'Filé, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 22.20, 'assets/images/burger.png'),
+  Product('Super Boy', 'Filé, bacon, ovo, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 24.00, 'assets/images/burger.png'),
+  Product('Filé Especial', 'Filé, frango, presunto, queijo, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 24.00, 'assets/images/burger.png'),
+  Product('À Moda da Casa', 'Filé, filé de frango, ovo, bacon, queijo, presunto, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 24.00, 'assets/images/burger.png'),
+  Product('Fiori Especial', 'Hambúrguer, filé, filé de frango, ovo, salsicha, queijo, presunto, tomate, alface, milho verde e batata palha', 'Lanches', '🍔', 26.00, 'assets/images/burger.png'),
+  Product('Coca-Cola Lata 350ml', 'Refrigerante', 'Refrigerantes', '🥤', 6.00, 'assets/images/soda.png'),
+  Product('Guaraná Antarctica Lata 350ml', 'Refrigerante', 'Refrigerantes', '🥤', 6.00, 'assets/images/soda.png'),
+  Product('Fanta Lata 350ml', 'Refrigerante', 'Refrigerantes', '🥤', 6.00, 'assets/images/soda.png'),
+  Product('Coca-Cola 1L', 'Refrigerante', 'Refrigerantes', '🥤', 9.00, 'assets/images/soda.png'),
+  Product('Guaraná Antarctica 1L', 'Refrigerante', 'Refrigerantes', '🥤', 9.00, 'assets/images/soda.png'),
+  Product('Fanta 1L', 'Refrigerante', 'Refrigerantes', '🥤', 8.00, 'assets/images/soda.png'),
 ];
-const extras = {'Extra queijo': 3.00, 'Extra bacon': 5.00, 'Extra carne': 8.00};
+const extras = <String, double>{
+  'Hambúrguer': 7.00, 'Queijo': 2.00, 'Presunto': 2.00,
+  'Ovo': 2.00, 'Bacon': 4.00, 'Frango': 4.00,
+  'Filé': 4.00, 'Salsicha': 5.00, 'Salada': 3.00,
+};
 class CartItem {
   final int productIndex;
   final List<String> selectedExtras;
@@ -124,10 +163,8 @@ class _FioreHomeState extends State<FioreHome> {
             Center(child: ClipRRect(borderRadius: BorderRadius.circular(22), child: Image.asset(index == 0 ? 'assets/images/hero.png' : p.image, width: double.infinity, height: 225, fit: BoxFit.cover))),
             const SizedBox(height: 14), section(p.title), Text(p.detail),
             const SizedBox(height: 8), Text(money(p.price), style: const TextStyle(color: orange, fontSize: 24, fontWeight: FontWeight.w900)),
-            const SizedBox(height: 14), if (p.category == 'Hambúrgueres') ...[
-              const Text('Ponto da carne', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
-              Wrap(spacing: 6, children: ['Ao ponto', 'Bem passada', 'Mal passada'].map((v) => ChoiceChip(label: Text(v), selected: doneness == v, selectedColor: softGold, onSelected: (_) => refresh(() => doneness = v))).toList()),
-              const SizedBox(height: 10),
+            const SizedBox(height: 14), if (p.category == 'Lanches') ...[
+              
               const Text('Escolha seus adicionais', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17)),
               ...extras.entries.map((e) => CheckboxListTile(contentPadding: EdgeInsets.zero,
                 title: Text(e.key), subtitle: Text('+ ${money(e.value)}'), value: selected.contains(e.key),
@@ -141,7 +178,7 @@ class _FioreHomeState extends State<FioreHome> {
               IconButton(onPressed: () => refresh(() => qty++), icon: const Icon(Icons.add_circle_outline)),
             ]),
             orangeButton('Adicionar • ${money((p.price + selected.fold<double>(0, (s, k) => s + extras[k]!)) * qty)}', () {
-              setState(() => items.add(CartItem(index, selected.toList(), note.text.trim(), qty, p.category == 'Hambúrgueres' ? doneness : '')));
+              setState(() => items.add(CartItem(index, selected.toList(), note.text.trim(), qty, '')));
               Navigator.pop(sheetContext); notify('Produto adicionado ao carrinho');
             }, icon: Icons.add_shopping_cart),
           ]))))));
@@ -158,7 +195,7 @@ class _FioreHomeState extends State<FioreHome> {
           Center(child: Image.asset('assets/images/logo_oficial.png',
             height: 170, width: 285, fit: BoxFit.contain)),
           const SizedBox(height: 4),
-          const Text('SABOR QUE APAIXONA', textAlign: TextAlign.center,
+          const Text('SABOR QUE CONQUISTA!', textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 17,
               fontWeight: FontWeight.w900, letterSpacing: 1.6)),
           const SizedBox(height: 7),
@@ -179,7 +216,7 @@ class _FioreHomeState extends State<FioreHome> {
                   const Text('Fiori Especial', style: TextStyle(
                     fontSize: 22, fontWeight: FontWeight.w900, color: brown)),
                   const SizedBox(height: 7),
-                  const Text('Carne 180g, queijo, bacon e molho especial.',
+                  const Text('Hambúrguer, filé, frango, ovo, salsicha e acompanhamentos.',
                     style: TextStyle(color: brown, fontSize: 12)),
                   const SizedBox(height: 12),
                   Text(money(catalog[0].price), style: const TextStyle(
@@ -222,7 +259,7 @@ class _FioreHomeState extends State<FioreHome> {
         const SizedBox(height: 26),
         section('Favoritos da casa'),
         productTile(0),
-        productTile(2),
+        productTile(13),
         const SizedBox(height: 10),
         orangeButton('Explorar cardápio completo',
           () => setState(() => tab = 1), icon: Icons.restaurant_menu),
@@ -249,7 +286,7 @@ class _FioreHomeState extends State<FioreHome> {
       decoration: InputDecoration(hintText: 'Buscar seu lanche...', prefixIcon: const Icon(Icons.search),
         filled: true, fillColor: Colors.white, border: OutlineInputBorder(borderRadius: BorderRadius.circular(16), borderSide: BorderSide.none))),
     const SizedBox(height: 14), SingleChildScrollView(scrollDirection: Axis.horizontal, child: Row(children: [
-      for (final c in ['Todos', 'Hambúrgueres', 'Acompanhamentos', 'Bebidas'])
+      for (final c in ['Todos', 'Lanches', 'Refrigerantes'])
         Padding(padding: const EdgeInsets.only(right: 7), child: ChoiceChip(label: Text(c), selected: category == c,
           selectedColor: const Color(0xFFFFD5AA), onSelected: (_) => setState(() => category = c))),
     ])), const SizedBox(height: 16),
