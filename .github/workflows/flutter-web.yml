@@ -34,6 +34,15 @@ jobs:
       - name: Instalar dependencias
         run: flutter pub get
 
+      - name: Conferir arquivo antes da compilação
+        run: |
+          echo "Commit utilizado:"
+          git rev-parse --short HEAD
+          echo "Primeiras linhas do main.dart:"
+          head -n 15 lib/main.dart
+          echo "Referências ao tema:"
+          grep -n "colorScheme:" lib/main.dart || true
+
       - name: Compilar Flutter Web
         run: flutter build web --release --base-href /fiore-lanches/
 
